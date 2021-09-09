@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/Estilos/body.css">
     <link rel="stylesheet" href="/Estilos/header.css">
     <link rel="stylesheet" href="/Estilos/footer.css">
+    <link rel="stylesheet" href="/Estilos/relatorioVendas.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
@@ -27,6 +28,41 @@
             </ul>
         </nav>
     </header>
+    <div id="container-pesq-vendas">
+        <h2>Faça sua pesquisa conforme os itens a baixo</h2>
+    
+        <div id="form-pesq-vendas">
+            <div id="rad-pesq">
+                <form>
+                <label for="altipisos" class="titulos-pesq-vendas">Altipisos</label>
+                <label for="possamai" class="titulos-pesq-vendas">Possamai</label><br>
+                <input type="radio" name="empresa" value="altipisos" checked>
+                <input type="radio" name="empresa" value="possamai"><br>
+            </div>
+            <div id="check-pesq">
+                <label for="vendedor" class="titulos-pesq-vendas">Vendedor</label><br>
+                <input type="checkbox" id="vendedor-senior" name="vendas1" value="vendedor">
+                <label for="vendas1">Vendedor Senior</label>
+                <input type="checkbox" id="parceiro-representante" name="vendas2" value="parceiro">
+                <label for="vendas2">Parceiro Representante</label>
+                <input type="checkbox" id="pre-vendedor" name="vendas3" value="pre-vendedor">
+                <label for="vendas3">Pré Vendedor</label><br>
+            </div>
+                <label for="empresa" class="titulos-pesq-vendas">Nome da Empresa Compradora</label><br>
+                <input type="text" name="empresa" placeholder="Digite o nome da pessoa física ou jurídica compradora" ><br>
+                <label for="contrato" class="titulos-pesq-vendas">Número do Contrato</label><br>
+                <input type="number" name="contrato" placeholder="Digite o nº do contrato" ><br>
+                <label for="endereco" class="titulos-pesq-vendas">Endereço</label><br>
+                <input type="text" name="endereço" placeholder="Digite o endereço de instalação" ><br>
+                <label for="data1" class="titulos-pesq-vendas">Data de Inicio</label>
+                <label for="data2" class="titulos-pesq-vendas">Data Final</label><br>    
+            <div id="data">                
+                <input type="date" name="data1" >
+                <input type="date" name="data2" ><br>
+            </div>    
+                </form>
+            <button id="botao" onclick="">Pesquisar</button>
+        </div>
 </body>
 <footer>
     <p>Create By: R.A.Oliveira & Hiuhani Romano.</p>

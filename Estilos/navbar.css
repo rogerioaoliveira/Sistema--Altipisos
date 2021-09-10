@@ -7,8 +7,11 @@ a{
     text-decoration: none;
     transition: 0.3s;
 }
-a:hover{
-    font-weight: bolder;
+ul a:hover {
+    color: #fff;
+    background-color: #0098d2;
+    border-radius: 30px;
+    padding: 0.5em;
 }
 .logo{
     font-size: 24px;
@@ -30,6 +33,7 @@ nav{
 .nav-list li{
     letter-spacing: 3px;
     margin-left: 2em;
+    font-weight: 600;
 }
 .mobile-menu{
     cursor: pointer;

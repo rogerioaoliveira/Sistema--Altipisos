@@ -18,8 +18,8 @@ function funcCalcular() {
 
         // Calcula os valores que serão exibidos no span
 
-        frete = parseInt(distancia * 4);
-        piso = parseInt(metro * 140);
+        frete = parseInt(distancia * 2.8);
+        piso = parseInt(metro * 135);
         precoTotal = parseInt(frete + piso);
         metroQuadrado = parseFloat(precoTotal / metro);
 
@@ -38,8 +38,8 @@ function funcCalcular() {
                 frete = parseInt(distancia * 3.5) / 2;
             }
             //  Impede que o preço seja menor do que o minimo aceitavel
-            if (metroQuadrado < 140) {
-                metroQuadrado = 140;
+            if (metroQuadrado < 135) {
+                metroQuadrado = 135;
                 piso = metroQuadrado * metro;
                 precoTotal = piso + frete;
                 metroQuadrado = precoTotal / metro;
@@ -65,8 +65,8 @@ function funcCalcular() {
 
         // Calcula os valores que serão exibidos no span
 
-        frete = parseInt(distancia * 4);
-        piso = parseInt(metro * 150);
+        frete = parseInt(distancia * 2.8);
+        piso = parseInt(metro * 145);
         precoTotal = parseInt(frete + piso);
         metroQuadrado = parseFloat(precoTotal / metro);
 
@@ -86,8 +86,8 @@ function funcCalcular() {
             }
 
             //  Impede que o preço seja menor do que o minimo aceitavel
-            if (metroQuadrado < 150) {
-                metroQuadrado = 150;
+            if (metroQuadrado < 145) {
+                metroQuadrado = 145;
                 piso = metroQuadrado * metro;
                 precoTotal = piso + frete;
                 metroQuadrado = precoTotal / metro;

@@ -8,7 +8,7 @@
     <meta name="author" content="R. A. Oliveira">
     <link rel="shortcut icon" href="/Imagens/favicon.png" />
     <link rel="stylesheet" href="/Estilos/calculadoraPM.css">
-    <link rel="stylesheet" href="/Estilos/header.css">
+    <link rel="stylesheet" href="/Estilos/navbar.css">
     <script type="text/javascript" src="/Scripts JS/calculadoraPM.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -17,10 +17,15 @@
 </head>
 
 <body>
-    <header>
+    <<header>
         <nav>
-            <ul>
-                <li><a href="https://www.altipisos.com.br/" target="_blank"><img src="/Imagens/logo.png" alt="Logo Altipisos"></a></li>
+            <a class="logo" href="https://www.altipisos.com.br/" target="_blank"><img src="/Imagens/logo.png" alt="Logo Altipisos"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
                 <li><a href="/Páginas/cadastroVendas.html">Cadastro de venda</a></li>
                 <li><a href="/Páginas/relatorioVendas.html">Relatório de vendas</a></li>
                 <li><a href="/Páginas/estoque.html">Estoque</a></li>
@@ -30,6 +35,8 @@
             </ul>
         </nav>
     </header>
+    <main></main>
+    <script src="/Scripts JS/mobile-navbar.js"></script>
     <div id="container">
             <div id="mapa">
             <h2>Clique em "Mais opções", ensira o endereço desejado e veja qual é a distância!</h2>

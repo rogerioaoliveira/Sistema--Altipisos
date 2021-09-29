@@ -19,7 +19,7 @@ function funcCalcular() {
         // Calcula os valores que serão exibidos no span
 
         frete = parseInt(distancia * 2.8);
-        piso = parseInt(metro * 135);
+        piso = parseInt(metro * 140);
         precoTotal = parseInt(frete + piso);
         metroQuadrado = parseFloat(precoTotal / metro);
 
@@ -30,16 +30,13 @@ function funcCalcular() {
 
         } else if (document.getElementById('for').checked) {
 
-            // Caso esse radio button estiver ativo, divide o preço total por 2 dando o preço para apenas fornecimento
-            metroQuadrado = parseFloat(precoTotal / metro) / 2;
-
             //  Caso a distancia seja maior que 1000 km, multiplica por 3.5 e divide por 2 para ter um preço mais acertivo
             if (distancia > 1000) {
                 frete = parseInt(distancia * 3.5) / 2;
             }
             //  Impede que o preço seja menor do que o minimo aceitavel
-            if (metroQuadrado < 135) {
-                metroQuadrado = 135;
+            if (metroQuadrado > 140 ) {
+                metroQuadrado = 140;
                 piso = metroQuadrado * metro;
                 precoTotal = piso + frete;
                 metroQuadrado = precoTotal / metro;
@@ -66,7 +63,7 @@ function funcCalcular() {
         // Calcula os valores que serão exibidos no span
 
         frete = parseInt(distancia * 2.8);
-        piso = parseInt(metro * 145);
+        piso = parseInt(metro * 150);
         precoTotal = parseInt(frete + piso);
         metroQuadrado = parseFloat(precoTotal / metro);
 
@@ -75,10 +72,8 @@ function funcCalcular() {
         if (document.getElementById('inst').checked) {
 
 
-        } else if (document.getElementById('for').checked) {
-
-            // Caso esse radio button estiver ativo, divide o preço total por 2 dando o preço para apenas fornecimento
-            metroQuadrado = parseFloat(precoTotal / metro) / 2;
+        } 
+        else if (document.getElementById('for').checked) {
 
             //  Caso a distancia seja maior que 1000 km, multiplica por 3.5 e divide por 2 para ter um preço mais acertivo
             if (distancia > 1000) {
@@ -86,11 +81,11 @@ function funcCalcular() {
             }
 
             //  Impede que o preço seja menor do que o minimo aceitavel
-            if (metroQuadrado < 145) {
-                metroQuadrado = 145;
-                piso = metroQuadrado * metro;
-                precoTotal = piso + frete;
-                metroQuadrado = precoTotal / metro;
+            if (metroQuadrado > 150) {  
+                metroQuadrado = 150;
+                piso = parseInt(metro * metroQuadrado);
+                precoTotal = parseInt(frete + piso);
+                metroQuadrado = parseFloat(precoTotal / metro);
             }
         } else {
             alert("Você não especificou se o piso é para fornecimento ou instalação!");
